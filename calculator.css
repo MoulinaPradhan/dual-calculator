@@ -1,0 +1,95 @@
+body{
+    margin:0px;
+    background-color: black;
+}
+#container{
+   
+    margin:0px auto;
+    height:100vh;
+    width:500px;
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT__QuR4UWxC_CyeYjYxwNx_GUqOVTTLjprMw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#calculator{
+    box-shadow: 8px 6px 16px 10px black;
+    width:320px;
+    height:520px;
+    background-color: lightgray;
+    margin:0 auto;
+    top:20px;
+    position:relative;
+    border-radius: 5px;
+}
+#result{
+    height:120px;
+    background-color: black;
+    color:white;
+    border:6px solid lightgray;
+}
+#history{
+    text-align: right;
+    height:20px;
+    margin:0 20px;
+    padding-top:20px;
+    font-size: 15px;
+    color:rgb(144, 202, 202);
+}
+#output{
+    text-align: right;
+    height:60px;
+    margin:10px 20px;
+    font-size:30px;
+
+}
+#keyboard{
+    height:400px;
+}
+.operator, .number, .empty{
+    width:50px;
+    height: 50px;
+    margin:15px;
+    float:left;
+    border-radius: 50%;
+    border-width:0px;
+    font-weight: bold;;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: lightgray;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.number:active, .operator:active{
+    font-size:13px;
+}
+.number:focus, .operator:focus, .empty:focus{
+    outline: 0;
+}
+.number:hover{
+    background-color: lightsalmon;
+}
+button:nth-child(4n){
+    font-size: 20px;
+    background-color: mediumspringgreen;
+}
+.operator:hover{
+    background-color:#3cf7af;
+}
+.animate {
+    transition-duration: 0.5s;
+    background-color:blue;
+   
+  }
+#clear,#backspace{
+    background-color:#fb264e;
+    color:white;
+
+}
+.operator:hover{
+    font-size: 16px;
+}
